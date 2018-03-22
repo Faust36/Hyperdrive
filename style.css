@@ -1,0 +1,21 @@
+#canvas{
+  z-index: 0;
+}
+#background{
+  z-index: -1;
+}
+canvas{
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  background: transparent;
+
+}
+
+
+body{
+  background-image: url("./assets/images/star2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
