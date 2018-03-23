@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   entry: './lib/hyperdrive.js',
   output: {
-    filename: './dist/bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
   }
 };
