@@ -4,6 +4,7 @@
   <p>Hyperdrive is a top-down, arcade style space shooter for 1-player.  Players will guide their starship through an asteroid field while fending off enemy spaceships.</p>
 
 <h2>MVP</h2>
+
 1. A player ship with controls and the ability to fire a weapon
 2. Enemy ships which spawn at random intervals, shoot weapons which damage the player ship and are able to be damaged by the player's weapon
 3. asteroids which spawn randomly and do collision damage to player ship (possibly able to be destroyed by player weapon)
@@ -14,6 +15,7 @@
  JavaScript, HTML, CSS, Canvas
 
 <h2>Implementation Timeline</h2>
+
 * Day1: Dedicated to creating canvas layout and rendering the player ship with controls.  If there is time, begin implementing player weapon.
 * Day2: Dedicated to creating enemy ships and their spawn rate and firing ability.
 * Day3: Create asteroids and implement interactions between player ship, enemy ships and asteroids. Complete any features from previous days
