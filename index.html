@@ -3,20 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="./assets/keymaster.js"></script>
-    <script src='./dist/bundle.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="./assets/keymaster.js"></script>
+    <script src='./dist/bundle.js'></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="title">HyperDrive</header>
     <div class='main'>
-      <div class='controls'>
-        W : Up
-        S : Down
-        D : Right
-        A : Left
-        Space: Fire 
+      <div class='sidebar'>
+        <div class='buttons'>
+          <div id='play'></div>
+        </div>
+        <ul class='controls'>
+          <li>W : Up</li>
+          <li>S : Down</li>
+          <li>D : Right</li>
+          <li>A : Left</li>
+          <li>Space: Fire</li>
+        </ul>
+        <div class='mute' onclick="muteAll()">
+          <i class="fas fa-volume-up fa-lg"></i>
+        </div>
       </div>
       <div class='game'>
         <canvas id="background" width="800" height="600"></canvas>
@@ -24,4 +33,20 @@
       </div>
     </div>
   </body>
+  <script>
+    function mute(elem){
+      if (elem.muted === false) {
+        elem.muted = true
+        elem.pause()
+      }else{
+        elem.muted = false
+        elem.play()
+      }
+    }
+
+    function muteAll(){
+      let audios = document.querySelectorAll('audio')
+      audios.forEach((audio)=>{mute(audio)})
+    }
+  </script>
 </html>

@@ -33,4 +33,46 @@ body{
   color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
   text-align: center;
+  list-style: none;
+}
+
+.main{
+  display: flex;
+
+}
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mute{
+  height: 50px;
+  width: 50px;
+  color: #ff0080;
+}
+
+.mute:hover{
+  cursor:pointer;
+  color: #2dedc6;
+}
+.buttons{
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+#play{
+  background-image: url("./assets/sprites/Spaceship_art_pack/Menu Screen/play_buttons.png");
+  height: 50px;
+  width: 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border: 1px solid white; */
+  padding: 0;
+  margin: 10px;
+}
+
+#play:hover{
+  cursor: pointer;
+  background-image: url("./assets/sprites/Spaceship_art_pack/Menu Screen/play_buttons_pressed_blue.png");
 }
