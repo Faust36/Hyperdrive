@@ -4,6 +4,10 @@
 #background{
   z-index: -1;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
 canvas{
   /* border: 1px solid black; */
   position: absolute;
@@ -56,11 +60,13 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
 }
 .mute{
   height: 50px;
   width: 50px;
   color: #ff0080;
+  margin-left: 60px;
 }
 
 .mute:hover{
@@ -81,10 +87,24 @@ body{
   background-repeat: no-repeat;
   /* border: 1px solid white; */
   padding: 0;
-  margin: 10px;
+  margin-left: 40px;
 }
 
 #play:hover{
   cursor: pointer;
   background-image: url("./assets/sprites/Spaceship_art_pack/Menu Screen/play_buttons_pressed_blue.png");
+}
+
+.info-list{
+  font-family: 'Righteous', cursive;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+  text-align: center;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.info-list:hover{
+  color: #42f4e8;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #2dedc6, 0 0 30px #2dedc6, 0 0 40px #2dedc6, 0 0 55px #2dedc6, 0 0 75px #2dedc6;
 }
