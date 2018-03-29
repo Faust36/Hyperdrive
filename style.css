@@ -12,7 +12,19 @@ canvas{
   background: transparent;
 
 }
-
+#gameOver{
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  font-family: 'Righteous', cursive;
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+  text-align: center;
+}
+.invisible{
+  visibility: hidden;
+}
 
 body{
   background-image: url("./assets/images/star2.jpg");
