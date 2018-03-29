@@ -22,6 +22,7 @@
 * Day4:  Add sound.  Finish any features which are not completed
 
 <h2>Bonus Features</h2>
+
 * A Boss type enemy which spawns at a certain point in the game.
 * Add a unique firing pattern for the boss enemy
 * Add more complex movements for enemy ships
