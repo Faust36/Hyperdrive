@@ -16,6 +16,9 @@ canvas{
   background: transparent;
 
 }
+audio{
+  display: none;
+}
 #gameOver{
   position: absolute;
   top: 25%;
