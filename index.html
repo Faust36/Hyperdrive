@@ -102,7 +102,7 @@
 
     function muteAll(){
       let audios = document.querySelectorAll('audio')
-      audios.forEach((audio)=>{mute(audio)})
+      audios.forEach((audio)=>{audio.mute = true})
     }
   </script>
 </html>
